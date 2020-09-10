@@ -1,24 +1,24 @@
 package com.training;
 
 public class Calculator {
-    private int value;
-    public Calculator(int value){
+    private long value;
+    public Calculator(long value){
         this.value = value;
     }
 
-    public int getValue() {
-        return value;
-    }
-
-    public Calculator add(int v) {
+    public long getValue() {
         throw new UnsupportedOperationException();
     }
 
-    public Calculator minus(int v) {
+    public Calculator add(final long value) {
         throw new UnsupportedOperationException();
     }
 
-    public Calculator divide(int v) {
+    public Calculator minus(final long value) {
+        throw new UnsupportedOperationException();
+    }
+
+    public Calculator divide(final long value) {
         throw new UnsupportedOperationException();
     }
 
@@ -26,11 +26,11 @@ public class Calculator {
         throw new UnsupportedOperationException();
     }
 
-    public Calculator times(int v) {
+    public Calculator times(final long value) {
         throw new UnsupportedOperationException();
     }
 
-    public Calculator modulo(int v) {
+    public Calculator modulo(final long value) {
         throw new UnsupportedOperationException();
     }
 }
