@@ -2,7 +2,7 @@
 
 Skeleton project for the DEIK course.
 
-Excercises:
+Exercises:
 1. TDD for a simple calculator
 1. Create test cases for the Fibonacci algorithm
 1. Create test cases for the Euclidean algorithm

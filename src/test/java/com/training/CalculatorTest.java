@@ -1,5 +1,6 @@
 package com.training;
 
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ public class CalculatorTest {
         //Given
         Calculator calc = new Calculator(3);
         //When
-        int result = calc.getValue();
+        long result = calc.getValue();
         //Then
         assertEquals(3, result);
     }
@@ -20,7 +21,7 @@ public class CalculatorTest {
         //Given
         Calculator calc = new Calculator(3);
         //When
-        int result = calc.add(10).getValue();
+        long result = calc.add(10).getValue();
         //Then
         assertEquals(13, result);
     }
@@ -30,7 +31,7 @@ public class CalculatorTest {
         //Given
         Calculator calc = new Calculator(3);
         //When
-        int result = calc.minus(10).getValue();
+        long result = calc.minus(10).getValue();
         //Then
         assertEquals(-7, result);
     }
@@ -40,7 +41,7 @@ public class CalculatorTest {
         //Given
         Calculator calc = new Calculator(9);
         //When
-        int result = calc.sqrt().getValue();
+        long result = calc.sqrt().getValue();
         //Then
         assertEquals(3, result);
     }
@@ -50,7 +51,7 @@ public class CalculatorTest {
         //Given
         Calculator calc = new Calculator(3);
         //When
-        int result = calc.times(10).getValue();
+        long result = calc.times(10).getValue();
         //Then
         assertEquals(30, result);
     }
@@ -60,7 +61,7 @@ public class CalculatorTest {
         //Given
         Calculator calc = new Calculator(10);
         //When
-        int result = calc.divide(2).getValue();
+        long result = calc.divide(2).getValue();
         //Then
         assertEquals(5, result);
     }
@@ -70,7 +71,7 @@ public class CalculatorTest {
         //Given
         Calculator calc = new Calculator(10);
         //When
-        int result = calc.modulo(5).getValue();
+        long result = calc.modulo(5).getValue();
         //Then
         assertEquals(0, result);
     }
@@ -82,7 +83,6 @@ public class CalculatorTest {
         //When
         calc.divide(0);
         //Then
-        // Throw exception
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -92,7 +92,6 @@ public class CalculatorTest {
         //When
         calc.sqrt();
         //Then
-        // Throw error
     }
 
     @Test
@@ -100,7 +99,7 @@ public class CalculatorTest {
         //Given
         Calculator calc = new Calculator(3);
         //When
-        int result = calc.add(4).minus(3).times(6).getValue();
+        long result = calc.add(4).minus(3).times(6).getValue();
         //Then
         assertEquals(24, result);
     }
